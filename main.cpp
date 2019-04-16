@@ -4,5 +4,6 @@ using namespace std;
 
 int main ()
 {
-cout<<"test"<< endl;
+int* pTableau;
+pTableau = malloc(sizeof(int)*250);
 }
