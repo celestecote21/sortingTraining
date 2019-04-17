@@ -32,10 +32,13 @@ void blendArray(int* pArray, int nbColum)
 void changeInArray(int* pArray, int  case1, int case2)
 {
     int temp;
-
+    /*printf("before");
+    printArray(pArray, 10);*/
     temp = *(pArray + case1);
     *(pArray + case1) = *(pArray + case2);
     *(pArray + case2) = temp;
+   /* printf("after ");
+    printArray(pArray, 10);*/
 }
 
 
