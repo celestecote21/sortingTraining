@@ -10,7 +10,7 @@ void initArray(int* pArray, int nbColum)
     {
        *(pArray + i) = i;
     }
-    printArray(pArray, nbColum);
+    
 }
 
 void blendArray(int* pArray, int nbColum)
@@ -25,7 +25,7 @@ void blendArray(int* pArray, int nbColum)
         case2 = rand()%(nbColum);
         changeInArray(pArray, case1, case2);
     }
-    
+    printArray(pArray, nbColum);
 }
 
 
