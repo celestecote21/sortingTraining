@@ -16,6 +16,7 @@ public:
     void writeArray();
     void blendArray();
     void bubbleSorting();
+    void combSort();
 };
 
 

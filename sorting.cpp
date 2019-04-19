@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Sorting::Sorting(int nb) : m_nb(nb), m_nbChan(0)
+Sorting::Sorting(int nb) : m_nb(nb), m_nbChan(0), m_limite(nb) 
 {
     for(int  i = 0; i < nb; i++)
     {
@@ -77,6 +77,28 @@ void Sorting::bubbleSorting()
             }
         }
         
+    }
+    
+}
+
+
+void Sorting::combSort()
+{
+    bool modif(true);
+    m_limite -= 2;
+    while(m_limite < 1){
+        modif = false;
+        for(int i = 0; (i + m_limite) < m_nb; i++)
+        {
+            if( m_pArray[i] > m_pArray[i + m_limite])
+            {
+                modif = true;
+                changeInArray(i, (i + m_limite));
+                m_nbChan ++;
+            }
+        }
+        if(m_limite < 1)
+            m_limite--;
     }
     
 }

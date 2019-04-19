@@ -11,7 +11,7 @@ int main ()
 
     array1.writeArray();
 
-    array1.bubbleSorting();
+    array1.combSort();
 
     array1.writeArray();
 }
