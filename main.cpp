@@ -7,7 +7,7 @@ using namespace std;
 int main ()
 {
     srand(time(NULL));
-    Sorting array1(250);
+    Sorting array1(10);
 
     array1.writeArray();
 

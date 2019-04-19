@@ -86,7 +86,7 @@ void Sorting::combSort()
 {
     bool modif(true);
     m_limite -= 2;
-    while(m_limite < 1){
+    while(m_limite > 1){
         modif = false;
         for(int i = 0; (i + m_limite) < m_nb; i++)
         {
@@ -97,7 +97,7 @@ void Sorting::combSort()
                 m_nbChan ++;
             }
         }
-        if(m_limite < 1)
+        if(m_limite > 1)
             m_limite--;
     }
     
