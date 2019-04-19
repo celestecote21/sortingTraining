@@ -1,4 +1,6 @@
 #include "sorting.h"
+#include <time.h>
+#include <stdio.h>
 
 int bubbleSort(int* pArray, int nbColum)
 {

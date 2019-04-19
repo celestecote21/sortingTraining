@@ -1,9 +1,17 @@
 #include <iostream>
+#include "sorting.hpp"
+#include <vector>
 
 using namespace std;
 
 int main ()
 {
-int* pTableau;
-pTableau = malloc(sizeof(int)*250);
+    srand(time(NULL));
+    Sorting array1(250);
+
+    array1.writeArray();
+
+    array1.bubbleSorting();
+
+    array1.writeArray();
 }
