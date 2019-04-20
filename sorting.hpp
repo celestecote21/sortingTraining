@@ -17,6 +17,7 @@ public:
     void blendArray();
     void bubbleSorting();
     void combSort();
+    int getNbChange() const;
 };
 
 

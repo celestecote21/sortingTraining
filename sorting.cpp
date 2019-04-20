@@ -35,6 +35,11 @@ void Sorting::writeArray()
 }
 
 
+int Sorting::getNbChange() const
+{
+    return m_nbChan;
+}
+
 void Sorting::blendArray()
 {
     int place1, place2;
@@ -46,7 +51,7 @@ void Sorting::blendArray()
         place1 = rand()%(m_nb);
         place2 = rand()%(m_nb);
     }
-    
+    m_nbChan = 0;
 }
 
 
