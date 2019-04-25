@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <time.h>
+#include <algorithm>
 
 using namespace std;
 
@@ -107,3 +108,5 @@ void Sorting::combSort()
     }
     
 }
+
+void

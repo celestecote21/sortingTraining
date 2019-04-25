@@ -17,7 +17,7 @@ void blendArray(int* pArray, int nbColum)
 {
     
     int case1, case2;
-    srand(time(NULL));
+    
 
     for(int i = 0; i < 500; i++)
     {
@@ -32,6 +32,7 @@ void blendArray(int* pArray, int nbColum)
 void changeInArray(int* pArray, int  case1, int case2)
 {
     int temp;
+    //printf("yeah %d %d  ", case1, case2);
     /*printf("before");
     printArray(pArray, 10);*/
     temp = *(pArray + case1);

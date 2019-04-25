@@ -17,7 +17,7 @@ public:
     void blendArray();
     void bubbleSorting();
     void combSort();
+    void quickSort(std::vector<int> array, int start, int end);
     int getNbChange() const;
 };
-
 
