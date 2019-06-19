@@ -14,11 +14,13 @@ int main()
 { 
     srand(time(NULL));
     int* pArray;
-    int nbColum = 21;
+    int nbColum = 5;
     int limite;
     pArray = malloc(sizeof(int)*(nbColum+1));
     initArray(pArray, nbColum);
     blendArray(pArray, nbColum);
+    
+    printArray(pArray, nbColum);
     
     quickSort(pArray, 0, nbColum - 1);
 
