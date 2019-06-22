@@ -20,10 +20,10 @@ int main()
     initArray(pArray, nbColum);
     blendArray(pArray, nbColum);
     
-    printArray(pArray, nbColum);
+    //printArray(pArray, nbColum);
     
-    quickSort(pArray, 0, nbColum - 1);
-
+    quickSort(pArray, 0, nbColum - 1, nbColum - 1);
+    //quicksort2(pArray, nbColum-1);
     printArray(pArray, nbColum);
 
     return 1;
